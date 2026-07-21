@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chapter 4: From the Stand's Eyeview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --yellow:#EEF07E;
+    --ink:#111111;
+    --paper:#FFFFFF;
+    --red:#A23B3B;
+  }
+  *{box-sizing:border-box;}
+  html,body{ margin:0; padding:0; background:var(--paper); color:var(--ink); font-family: Arial, Helvetica, sans-serif; }
+  .header{ background:var(--yellow); border-top:1px solid var(--ink); border-bottom:1px solid var(--ink); padding: 18px 40px 28px; }
+  .eyebrow-row{ display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid var(--ink); padding-bottom:10px; margin-bottom:18px; font-size:14px; }
+  .eyebrow-row a{ color:var(--ink); text-decoration:none; }
+  .header h1{ font-family: 'Anton', 'Arial Black', Arial, sans-serif; font-weight:400; font-size: clamp(40px, 9.5vw, 108px); letter-spacing:-0.01em; margin:0; line-height:0.95; text-transform:uppercase; text-align:center; }
+  .video-section{ position:relative; overflow:hidden; }
+  .video-bg{ position:absolute; inset:0; z-index:0; }
+  .video-bg video{ width:100%; height:100%; object-fit:cover; filter: blur(6px) saturate(0.9); transform: scale(1.05); }
+  .video-bg::after{ content:""; position:absolute; inset:0; background: rgba(255,255,255,0.72); }
+  .content{ position:relative; z-index:1; max-width:760px; margin:0 auto; padding: 80px 32px 100px; text-align:center; }
+  .chapter-label{ font-family: Georgia, 'Times New Roman', serif; font-weight:400; font-style:italic; text-transform:lowercase; font-size: clamp(22px, 3vw, 30px); margin: 0 0 36px; color:var(--ink); }
+  .player{ display:flex; align-items:center; justify-content:center; margin: 0 auto 56px; }
+  audio{ width:100%; max-width:420px; }
+  .lyrics p{ font-family: Georgia, 'Times New Roman', serif; font-size: clamp(17px, 2.2vw, 22px); line-height:1.9; margin: 0 0 34px; color:var(--ink); }
+  .verse{ margin-bottom:64px; }
+  .verse:last-child{ margin-bottom:0; }
+  .chorus p{ opacity:0.75; }
+  .site-index{ background:var(--paper); color:var(--ink); padding: 32px 40px 72px; }
+  .site-index-inner{ max-width:900px; margin:0 auto; }
+  .section-title{ font-family:'Anton', 'Arial Black', Arial, sans-serif; font-weight:400; color:var(--red); font-size: clamp(26px, 4vw, 40px); text-transform:uppercase; margin: 40px 0 4px; }
+  .section-title:first-child{ margin-top:0; }
+  .row-group{ border-top:1px solid var(--ink); }
+  .row-group a{ display:flex; justify-content:space-between; padding:12px 0; border-bottom:1px solid var(--ink); text-decoration:none; color:var(--ink); font-size:16px; }
+  .row-group a:hover{ background:var(--yellow); }
+</style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="eyebrow-row">
+      <a href="#">Your Friendly Neighborhood Rapper ↗</a>
+    </div>
+    <h1>From The Stand's Eyeview</h1>
+  </div>
+
+  <div class="video-section">
+    <div class="video-bg">
+      <video autoplay muted loop playsinline>
+        <source src="videos/from-the-stands-eyeview-bg.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <div class="content">
+      <h2 class="chapter-label">chapter 4: from the stand's eyeview</h2>
+
+      <div class="player">
+        <audio controls>
+          <source src="audio/from-the-stands-eyeview.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+
+      <div class="lyrics">
+        <div class="verse">
+          <p>as the sun brushes across my skin like a lover's fingers</p>
+          <p>and the wind be whispering the stories from afar</p>
+          <p>my eyes close, but mind opens up a thousand pictures</p>
+          <p>while the waves be tapping on my feet like a massage</p>
+          <p>gotta take myself away from the ordinary life</p>
+          <p>to seek for a better place</p>
+          <p>even if i have to fake my obituary file</p>
+          <p>cuz my state of mind is too important as a poet</p>
+          <p>gotta keep it potent for the pen i'm holding</p>
+          <p>but i ain't turning back on negativity</p>
+          <p>my life ain't lacking misery, i still embrace it like i'm taking nicotine</p>
+          <p>but i was born on the foundation of love</p>
+          <p>and love is so contagious, so my fate is for us</p>
+          <p>it's for the people, i wanna see us fight against the evil</p>
+          <p>in a corrupted world, but not necessary to keep the heat close</p>
+          <p>a tight hug can keep a child thug from a street roam</p>
+          <p>who knows behind that mask is a heart broken man whose knees fold</p>
+          <p>my motif is vivid, i ain't scared of critics</p>
+          <p>i do what i wanna do, there's no way around the mission</p>
+          <p>if it ain't me, then who else can see the vision?</p>
+          <p>who else can light the torch and spark a new ignition?</p>
+          <p>i wasn't from the street, was never torn by the heat</p>
+          <p>my friends ain't shot dead, i'm foreign to the grief</p>
+          <p>my family lives happily, i have a home full of peace</p>
+          <p>My pen is filled with love, every line brings relief</p>
+        </div>
+
+        <div class="verse chorus">
+          <p>Put your hands in the sky if you feel the vibe</p>
+          <p>Ey Ey</p>
+          <p>(i represent the deepest hope you feel inside)</p>
+          <p>Put your hands in the sky if you feel the vibe</p>
+          <p>Ey Ey</p>
+          <p>(i represent the deepest hope you feel inside)</p>
+          <p>Put your hands in the sky if you feel the vibe</p>
+          <p>Ey Ey</p>
+          <p>(i represent for the deepest hope you feel inside)</p>
+          <p>Put your hands in the sky if you feel the vibe</p>
+          <p>Ey Ey</p>
+          <p>(i represent for the deepest hope you feel inside)</p>
+        </div>
+
+        <div class="verse">
+          <p>sometimes i see a child in me</p>
+          <p>who walks into the room and wanna be the loudest kid</p>
+          <p>the problem is my stomach's bottomless</p>
+          <p>i'm greedy and i'm proud of it</p>
+          <p>that's why i'm stubborn in my own, you can't take it out of me</p>
+          <p>this kid wants to travel around the world, acquire the wisdom</p>
+          <p>and serve it to the crowd through words, to build his kingdom</p>
+          <p>where creativity connects to roads and sky scrapers</p>
+          <p>and at the center is a shrine for my lectures</p>
+          <p>that's when i see an old man in me</p>
+          <p>they say I'm sounded like an uncle, but where's the blasphemy?</p>
+          <p>okay, I apologize for these Vietnamito nephews</p>
+          <p>who try so hard to cosplay a black man, thinking that's cute</p>
+          <p>they say it's love, and they appreciate it</p>
+          <p>but love is a strong word, they all overstate it</p>
+          <p>love requires time and effort for a deeper understanding</p>
+          <p>if thug image is all they know, then i'll tell them that ain't it</p>
+          <p>but i swear they mean no harm</p>
+          <p>they're just some innocent kids from the other side of the globe</p>
+          <p>just give them some time</p>
+          <p>we'll bring 'em back home and change their perspective</p>
+          <p>starting from what they neglected, we'll send them back for miles</p>
+          <p>i'm conscious i would never be a part of your culture</p>
+          <p>i'm an outsider watching from the stands, collecting posters</p>
+          <p>digging deep in the history, my identity's emerge</p>
+          <p>i'm a proud Vietnamito, i do it with love</p>
+        </div>
+
+        <div class="verse chorus">
+          <p>Put your hands in the sky if you feel the vibe</p>
+          <p>Ey Ey</p>
+          <p>(i represent for the deepest hope you feel inside)</p>
+          <p>Put your hands in the sky if you feel the vibe</p>
+          <p>Ey Ey</p>
+          <p>(i represent for the deepest hope you feel inside)</p>
+          <p>Put your hands in the sky if you feel the vibe</p>
+          <p>Ey Ey</p>
+          <p>(i represent the deepest hope you feel inside)</p>
+          <p>Put your hands in the sky if you feel the vibe</p>
+          <p>Ey Ey</p>
+          <p>(i represent for the deepest hope you feel inside)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="site-index">
+    <div class="site-index-inner">
+      <h2 class="section-title">Track List</h2>
+      <nav class="row-group">
+        <a href="all-i-see.html"><span>chapter 1</span><span>all i see</span></a>
+        <a href="trifecta.html"><span>chapter 2</span><span>trifecta</span></a>
+        <a href="a-knife-in-the-kitchen.html"><span>chapter 3</span><span>a knife in the kitchen</span></a>
+        <a href="from-the-stands-eyeview.html"><span>chapter 4</span><span>from the stand's eyeview</span></a>
+      </nav>
+
+      <h2 class="section-title">Music Video</h2>
+      <nav class="row-group">
+        <a href="trifecta.html"><span>act 1</span><span>trifecta</span></a>
+        <a href="a-knife-in-the-kitchen.html"><span>act 2</span><span>a knife in the kitchen</span></a>
+      </nav>
+
+      <h2 class="section-title">About</h2>
+      <nav class="row-group">
+        <a href="about.html"><span>bio</span><span>→</span></a>
+      </nav>
+    </div>
+  </div>
+
+</body>
+</html>
