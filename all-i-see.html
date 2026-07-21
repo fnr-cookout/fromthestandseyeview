@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chapter 1: All I See — From the Stand's Eyeview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --yellow:#EEF07E;
+    --ink:#111111;
+    --paper:#FFFFFF;
+    --red:#A23B3B;
+  }
+
+  *{box-sizing:border-box;}
+
+  html,body{
+    margin:0;
+    padding:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  /* ---- header (same as front page) ---- */
+  .header{
+    background:var(--yellow);
+    border-top:1px solid var(--ink);
+    border-bottom:1px solid var(--ink);
+    padding: 18px 40px 28px;
+  }
+
+  .eyebrow-row{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-bottom:1px solid var(--ink);
+    padding-bottom:10px;
+    margin-bottom:18px;
+    font-size:14px;
+  }
+
+  .eyebrow-row a{
+    color:var(--ink);
+    text-decoration:none;
+  }
+
+  .header h1{
+    font-family: 'Anton', 'Arial Black', Arial, sans-serif;
+    font-weight:400;
+    font-size: clamp(40px, 9.5vw, 108px);
+    letter-spacing:-0.01em;
+    margin:0;
+    line-height:0.95;
+    text-transform:uppercase;
+    text-align:center;
+  }
+
+  /* ---- video section ---- */
+  .video-section{
+    position:relative;
+    overflow:hidden;
+  }
+
+  .video-bg{
+    position:absolute;
+    inset:0;
+    z-index:0;
+  }
+
+  .video-bg video{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    filter: blur(6px) saturate(0.9);
+    transform: scale(1.05);
+  }
+
+  .video-bg::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background: rgba(255,255,255,0.72);
+  }
+
+  /* ---- content ---- */
+  .content{
+    position:relative;
+    z-index:1;
+    max-width:760px;
+    margin:0 auto;
+    padding: 80px 32px 100px;
+    text-align:center;
+  }
+
+  .chapter-label{
+    font-family: Georgia, 'Times New Roman', serif;
+    font-weight:400;
+    font-style:italic;
+    text-transform:lowercase;
+    font-size: clamp(22px, 3vw, 30px);
+    margin: 0 0 36px;
+    color:var(--ink);
+  }
+
+  .player{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin: 0 auto 56px;
+  }
+
+  audio{
+    width:100%;
+    max-width:420px;
+  }
+
+  .lyrics p{
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: clamp(17px, 2.2vw, 22px);
+    line-height:1.9;
+    margin: 0 0 34px;
+    color:var(--ink);
+  }
+
+  .verse{
+    margin-bottom:64px;
+  }
+
+  .verse:last-child{
+    margin-bottom:0;
+  }
+
+  /* ---- shared site index (identical to front page, appended on every page) ---- */
+  .site-index{
+    background:var(--paper);
+    color:var(--ink);
+    padding: 32px 40px 72px;
+  }
+
+  .site-index-inner{
+    max-width:900px;
+    margin:0 auto;
+  }
+
+  .section-title{
+    font-family:'Anton', 'Arial Black', Arial, sans-serif;
+    font-weight:400;
+    color:var(--red);
+    font-size: clamp(26px, 4vw, 40px);
+    text-transform:uppercase;
+    margin: 40px 0 4px;
+  }
+
+  .section-title:first-child{
+    margin-top:0;
+  }
+
+  .row-group{
+    border-top:1px solid var(--ink);
+  }
+
+  .row-group a{
+    display:flex;
+    justify-content:space-between;
+    padding:12px 0;
+    border-bottom:1px solid var(--ink);
+    text-decoration:none;
+    color:var(--ink);
+    font-size:16px;
+  }
+
+  .row-group a:hover{
+    background:var(--yellow);
+  }
+</style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="eyebrow-row">
+      <a href="#">Your Friendly Neighborhood Rapper ↗</a>
+    </div>
+    <h1>From The Stand's Eyeview</h1>
+  </div>
+
+  <div class="video-section">
+    <div class="video-bg">
+      <video autoplay muted loop playsinline>
+        <source src="videos/all-i-see-bg.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <div class="content">
+      <h2 class="chapter-label">chapter 1: all i see</h2>
+
+      <div class="player">
+        <audio controls>
+          <source src="audio/all-i-see.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+
+      <div class="lyrics">
+        <div class="verse">
+          <p>all i see is the color green</p>
+          <p>i'm the new Isaac Newton, hiding in the shade of the money tree</p>
+          <p>if it's the Matrix rain that's pouring down, then i don't want no sun on me</p>
+          <p>the only thing could burn my skin is hot money touching me</p>
+          <p>my momma said: "it'll turn to steam, it just do worse for me</p>
+          <p>boy, don't you see those rich people wish they didn't serve the leaves?"</p>
+          <p>but would they think and say the same if they're still broke momma?</p>
+          <p>same reason i can't sleep at night, like a child with trauma</p>
+        </div>
+
+        <div class="verse">
+          <p>all i see is the color red</p>
+          <p>the bloodshed, the endless violence that causes pain to the world that bled</p>
+          <p>men who murder men keep murdering, my human trust is bent</p>
+          <p>i'm not gonna blame it on Pandora for the curses that we bear</p>
+          <p>apparently, it's all a part of human nature</p>
+          <p>even Zeus can't hide his curiosity to fuck his human neighbors</p>
+          <p>here i'm curious about the feeling of being the greatest</p>
+          <p>even if i have to murder rappers, let me taste the flavor</p>
+        </div>
+
+        <div class="verse">
+          <p>all i see is the color pink</p>
+          <p>Her lip gloss shining as our feet cross, vibing to the music, cuddling</p>
+          <p>under the cherry blossom avenue that blooms like cotton candy cloud</p>
+          <p>we're standing out like two flamingos snuggling</p>
+          <p>lil wifey bad, you've taken all my sight away</p>
+          <p>hearing all your little stories and my problems fly away</p>
+          <p>the aroma on you tempting, makes me wanna taste that Crème Brulee</p>
+          <p>even slightest touch can come and take my breath away</p>
+        </div>
+
+        <div class="verse">
+          <p>all i see is the color brown</p>
+          <p>the great mother Earth pushing me to the higher ground</p>
+          <p>until when all i see is blue</p>
+          <p>Is when my hope touch the sky, a new star shining,</p>
+          <p>flying with the ribbons are the birds that singing tunes</p>
+          <p>all i see is inspiration bitch</p>
+          <p>even they the simplest things like these colors that i'm playing with</p>
+          <p>doesn't matter if the greatest painter hold the cheapest crayon</p>
+          <p>cuz the picture still amazing, and the people still be gazing</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="site-index">
+    <div class="site-index-inner">
+      <h2 class="section-title">Track List</h2>
+      <nav class="row-group">
+        <a href="all-i-see.html"><span>chapter 1</span><span>all i see</span></a>
+        <a href="trifecta.html"><span>chapter 2</span><span>trifecta</span></a>
+        <a href="a-knife-in-the-kitchen.html"><span>chapter 3</span><span>a knife in the kitchen</span></a>
+        <a href="from-the-stands-eyeview.html"><span>chapter 4</span><span>from the stand's eyeview</span></a>
+      </nav>
+
+      <h2 class="section-title">Music Video</h2>
+      <nav class="row-group">
+        <a href="trifecta.html"><span>act 1</span><span>trifecta</span></a>
+        <a href="a-knife-in-the-kitchen.html"><span>act 2</span><span>a knife in the kitchen</span></a>
+      </nav>
+
+      <h2 class="section-title">About</h2>
+      <nav class="row-group">
+        <a href="about.html"><span>bio</span><span>→</span></a>
+      </nav>
+    </div>
+  </div>
+
+</body>
+</html>
