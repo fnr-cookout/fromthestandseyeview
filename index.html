@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>From the Stand's Eyeview</title>
+<style>
+  :root{
+    --yellow:#EEF07E;
+    --ink:#111111;
+    --paper:#FFFFFF;
+    --green:#4E7A51;
+    --red:#A23B3B;
+    --pink:#C97C93;
+    --brown:#8A6240;
+  }
+
+  *{box-sizing:border-box;}
+
+  html,body{
+    margin:0;
+    padding:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  /* ---- header box ---- */
+  .header{
+    background:var(--yellow);
+    border-top:1px solid var(--ink);
+    border-bottom:1px solid var(--ink);
+    padding: 18px 40px 28px;
+  }
+
+  .eyebrow-row{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-bottom:1px solid var(--ink);
+    padding-bottom:10px;
+    margin-bottom:18px;
+    font-size:14px;
+  }
+
+  .eyebrow-row a{
+    color:var(--ink);
+    text-decoration:none;
+  }
+
+  h1{
+    font-family: 'Arial Black', Arial, sans-serif;
+    font-weight:900;
+    font-size: clamp(32px, 6.5vw, 64px);
+    letter-spacing:-0.01em;
+    margin:0;
+    line-height:1.05;
+  }
+
+  /* ---- cover image ---- */
+  .cover{
+    width:100%;
+    height:auto;
+    display:block;
+  }
+
+  /* ---- index / nav ---- */
+  .index{
+    max-width:900px;
+    margin:0 auto;
+    padding: 32px 40px 64px;
+  }
+
+  .index-title{
+    font-size:12px;
+    letter-spacing:0.12em;
+    text-transform:uppercase;
+    opacity:0.55;
+    margin:0 0 12px;
+  }
+
+  .index a{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:14px 0;
+    border-bottom:1px solid var(--ink);
+    text-decoration:none;
+    color:var(--ink);
+    font-size:16px;
+  }
+
+  .index a:first-child{
+    border-top:1px solid var(--ink);
+  }
+
+  .index a:hover{
+    background:var(--yellow);
+  }
+
+  .idx-left{
+    display:flex;
+    align-items:center;
+    gap:14px;
+  }
+
+  .dot{
+    width:9px;
+    height:9px;
+    border-radius:50%;
+    display:inline-block;
+  }
+
+  .green .dot{background:var(--green);}
+  .red .dot{background:var(--red);}
+  .pink .dot{background:var(--pink);}
+  .brown .dot{background:var(--brown);}
+</style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="eyebrow-row">
+      <a href="#">Your Friendly Neighborhood Rapper ↗</a>
+    </div>
+    <h1>From The Stand's Eyeview</h1>
+  </div>
+
+  <img src="images/cover.png" alt="From the Stand's Eyeview cover art" class="cover">
+
+  <nav class="index">
+    <p class="index-title">Index</p>
+    <a href="green.html" class="green">
+      <span class="idx-left"><span class="dot"></span>Chapter 1 — Green</span>
+      <span>All I See</span>
+    </a>
+    <a href="red.html" class="red">
+      <span class="idx-left"><span class="dot"></span>Chapter 2 — Red</span>
+      <span>Trifecta</span>
+    </a>
+    <a href="pink.html" class="pink">
+      <span class="idx-left"><span class="dot"></span>Chapter 3 — Pink</span>
+      <span>—</span>
+    </a>
+    <a href="brown.html" class="brown">
+      <span class="idx-left"><span class="dot"></span>Chapter 4 — Brown</span>
+      <span>—</span>
+    </a>
+  </nav>
+
+</body>
+</html>
