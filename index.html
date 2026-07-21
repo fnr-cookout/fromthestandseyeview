@@ -4,6 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>From the Stand's Eyeview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
 <style>
   :root{
     --yellow:#EEF07E;
@@ -49,17 +52,25 @@
   }
 
   h1{
-    font-family: 'Arial Black', Arial, sans-serif;
-    font-weight:900;
-    font-size: clamp(32px, 6.5vw, 64px);
+    font-family: 'Anton', 'Arial Black', Arial, sans-serif;
+    font-weight:400;
+    font-size: clamp(40px, 9.5vw, 108px);
     letter-spacing:-0.01em;
     margin:0;
-    line-height:1.05;
+    line-height:0.95;
+    text-transform:uppercase;
   }
 
   /* ---- cover image ---- */
+  .cover-wrap{
+    display:flex;
+    justify-content:center;
+    padding: 32px 40px;
+  }
+
   .cover{
     width:100%;
+    max-width:520px;
     height:auto;
     display:block;
   }
@@ -126,7 +137,9 @@
     <h1>From The Stand's Eyeview</h1>
   </div>
 
-  <img src="images/cover.png" alt="From the Stand's Eyeview cover art" class="cover">
+  <div class="cover-wrap">
+    <img src="images/cover.png" alt="From the Stand's Eyeview cover art" class="cover">
+  </div>
 
   <nav class="index">
     <p class="index-title">Index</p>
