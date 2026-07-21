@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Music Video — A Knife in the Kitchen — From the Stand's Eyeview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --yellow:#EEF07E;
+    --ink:#111111;
+    --paper:#FFFFFF;
+    --red:#A23B3B;
+  }
+  *{box-sizing:border-box;}
+  html,body{ margin:0; padding:0; background:var(--paper); color:var(--ink); font-family: Arial, Helvetica, sans-serif; }
+  .header{ background:var(--yellow); border-top:1px solid var(--ink); border-bottom:1px solid var(--ink); padding: 18px 40px 28px; }
+  .eyebrow-row{ display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid var(--ink); padding-bottom:10px; margin-bottom:18px; font-size:14px; }
+  .eyebrow-row a{ color:var(--ink); text-decoration:none; }
+  .header h1{ font-family: 'Anton', 'Arial Black', Arial, sans-serif; font-weight:400; font-size: clamp(20px, 6.2vw, 108px); white-space:nowrap; letter-spacing:-0.01em; margin:0; line-height:0.95; text-transform:uppercase; text-align:center; }
+  .header h1 a{ color:inherit; text-decoration:none; }
+
+  .content{
+    max-width:900px;
+    margin:0 auto;
+    padding: 64px 32px 90px;
+    text-align:center;
+  }
+
+  .mv-label{
+    font-family: Georgia, 'Times New Roman', serif;
+    font-weight:400;
+    font-style:italic;
+    text-transform:lowercase;
+    font-size: clamp(22px, 3vw, 30px);
+    margin: 0 0 40px;
+  }
+
+  /* ---- video placeholder ---- */
+  .video-frame{
+    position:relative;
+    width:100%;
+    aspect-ratio: 16 / 9;
+    background:#f2f2f2;
+    border:1px solid var(--ink);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+
+  .video-frame video{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+  }
+
+  .placeholder-text{
+    font-size:14px;
+    opacity:0.5;
+    max-width:60ch;
+    padding:20px;
+  }
+
+  .site-index{ background:var(--paper); color:var(--ink); padding: 32px 40px 72px; }
+  .site-index-inner{ max-width:900px; margin:0 auto; }
+  .section-title{ font-family:'Anton', 'Arial Black', Arial, sans-serif; font-weight:400; color:var(--red); font-size: clamp(26px, 4vw, 40px); text-transform:uppercase; margin: 40px 0 4px; }
+  .section-title:first-child{ margin-top:0; }
+  .row-group{ border-top:1px solid var(--ink); }
+  .row-group a{ display:flex; justify-content:space-between; padding:12px 0; border-bottom:1px solid var(--ink); text-decoration:none; color:var(--ink); font-size:16px; }
+  .row-group a:hover{ background:var(--yellow); }
+</style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="eyebrow-row">
+      <a href="#">Your Friendly Neighborhood Rapper ↗</a>
+    </div>
+    <h1><a href="index.html">From The Stand's Eyeview</a></h1>
+  </div>
+
+  <div class="content">
+    <h2 class="mv-label">act 2: a knife in the kitchen</h2>
+
+    <div class="video-frame">
+      <!--
+        Khi có file video, xóa dòng placeholder-text bên dưới
+        và thay bằng:
+        <video controls poster="images/a-knife-in-the-kitchen-poster.jpg">
+          <source src="videos/a-knife-in-the-kitchen-mv.mp4" type="video/mp4">
+        </video>
+      -->
+      <p class="placeholder-text">Video sẽ hiện ở đây — upload file vào videos/a-knife-in-the-kitchen-mv.mp4</p>
+    </div>
+  </div>
+
+  <div class="site-index">
+    <div class="site-index-inner">
+      <h2 class="section-title">Track List</h2>
+      <nav class="row-group">
+        <a href="all-i-see.html"><span>chapter 1</span><span>all i see</span></a>
+        <a href="trifecta.html"><span>chapter 2</span><span>trifecta</span></a>
+        <a href="a-knife-in-the-kitchen.html"><span>chapter 3</span><span>a knife in the kitchen</span></a>
+        <a href="from-the-stands-eyeview.html"><span>chapter 4</span><span>from the stand's eyeview</span></a>
+      </nav>
+
+      <h2 class="section-title">Music Video</h2>
+      <nav class="row-group">
+        <a href="mv-trifecta.html"><span>act 1</span><span>trifecta</span></a>
+        <a href="mv-a-knife-in-the-kitchen.html"><span>act 2</span><span>a knife in the kitchen</span></a>
+      </nav>
+
+      <h2 class="section-title">About</h2>
+      <nav class="row-group">
+        <a href="about.html"><span>bio</span><span>→</span></a>
+      </nav>
+    </div>
+  </div>
+
+</body>
+</html>
