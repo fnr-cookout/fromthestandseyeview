@@ -62,15 +62,10 @@
   }
 
   /* ---- video section ---- */
-  .video-section{
-    position:relative;
-    overflow:hidden;
-  }
-
   .video-bg{
-    position:absolute;
+    position:fixed;
     inset:0;
-    z-index:0;
+    z-index:-1;
   }
 
   .video-bg video{
@@ -90,8 +85,6 @@
 
   /* ---- content ---- */
   .content{
-    position:relative;
-    z-index:1;
     max-width:760px;
     margin:0 auto;
     padding: 80px 32px 100px;
@@ -138,7 +131,7 @@
 
   /* ---- shared site index (identical to front page, appended on every page) ---- */
   .site-index{
-    background:var(--paper);
+    background:transparent;
     color:var(--ink);
     padding: 32px 40px 72px;
   }
@@ -189,15 +182,14 @@
     <h1><a href="index.html">From The Stand's Eyeview</a></h1>
   </div>
 
-  <div class="video-section">
-    <div class="video-bg">
-      <video autoplay muted loop playsinline>
-        <source src="videos/all-i-see-bg.mp4" type="video/mp4">
-      </video>
-    </div>
+  <div class="video-bg">
+    <video autoplay muted loop playsinline>
+      <source src="videos/all-i-see-bg.mp4" type="video/mp4">
+    </video>
+  </div>
 
-    <div class="content">
-      <h2 class="chapter-label">chapter 1: all i see</h2>
+  <div class="content">
+    <h2 class="chapter-label">chapter 1: all i see</h2>
 
       <div class="player">
         <audio controls>
@@ -252,7 +244,6 @@
         </div>
       </div>
     </div>
-  </div>
 
   <div class="site-index">
     <div class="site-index-inner">
