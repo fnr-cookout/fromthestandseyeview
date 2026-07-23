@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — From the Stand's Eyeview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --yellow:#EEF07E;
+    --ink:#111111;
+    --paper:#FFFFFF;
+    --red:#A23B3B;
+  }
+  *{box-sizing:border-box;}
+  html,body{ margin:0; padding:0; background:var(--paper); color:var(--ink); font-family: Arial, Helvetica, sans-serif; }
+
+  .header{ background:var(--yellow); border-top:1px solid var(--ink); border-bottom:1px solid var(--ink); padding: 18px 40px 28px; }
+  .eyebrow-row{ display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid var(--ink); padding-bottom:10px; margin-bottom:18px; font-size:14px; }
+  .eyebrow-row a{ color:var(--ink); text-decoration:none; }
+  .header h1{ font-family: 'Anton', 'Arial Black', Arial, sans-serif; font-weight:400; font-size: clamp(20px, 6.2vw, 108px); white-space:nowrap; letter-spacing:-0.01em; margin:0; line-height:0.95; text-transform:uppercase; text-align:center; }
+  .header h1 a{ color:inherit; text-decoration:none; }
+
+  /* ---- bio content ---- */
+  .bio-wrap{
+    max-width:900px;
+    margin:0 auto;
+    padding: 72px 32px 90px;
+    display:flex;
+    gap:56px;
+    align-items:flex-start;
+    flex-wrap:wrap;
+  }
+
+  .bio-photo-col{
+    flex:0 0 280px;
+    width:280px;
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+  }
+
+  .bio-photo{
+    width:100%;
+    aspect-ratio: 4 / 5;
+    background:#f2f2f2;
+    border:1px solid var(--ink);
+    overflow:hidden;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+
+  .bio-photo-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:12px;
+  }
+
+  .bio-photo-small{
+    aspect-ratio: 1 / 1;
+    background:#f2f2f2;
+    border:1px solid var(--ink);
+    overflow:hidden;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+
+  .bio-photo-small img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+  }
+
+  .bio-photo img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+  }
+
+  .placeholder-text{
+    font-size:13px;
+    opacity:0.5;
+    text-align:center;
+    padding:20px;
+  }
+
+  .bio-photo-small .placeholder-text{
+    font-size:10px;
+    padding:8px;
+  }
+
+  .bio-text{
+    flex:1;
+    min-width:260px;
+  }
+
+  .bio-text .eyebrow{
+    font-size:12px;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    opacity:0.5;
+    margin:0 0 16px;
+  }
+
+  .bio-text h2{
+    font-family: Georgia, 'Times New Roman', serif;
+    font-style:italic;
+    font-weight:400;
+    font-size: clamp(24px, 3.2vw, 32px);
+    margin:0 0 24px;
+  }
+
+  .bio-text p{
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size:16px;
+    line-height:1.85;
+    margin:0 0 22px;
+  }
+
+  .bio-text .signature{
+    opacity:0.6;
+    font-style:italic;
+    font-size:15px;
+  }
+
+  /* ---- poem section (visually separate from bio) ---- */
+  .poem-wrap{
+    max-width:700px;
+    margin:0 auto;
+    padding: 0 32px 96px;
+    border-top:1px solid var(--ink);
+    padding-top:56px;
+  }
+
+  .poem-intro{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:13px;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    opacity:0.5;
+    margin:0 0 32px;
+    text-align:center;
+  }
+
+  .poem{
+    background:#faf9f5;
+    border:1px solid var(--ink);
+    padding: 40px 36px;
+  }
+
+  .poem p{
+    font-family: Georgia, 'Times New Roman', serif;
+    font-style:italic;
+    font-size:16px;
+    line-height:1.9;
+    margin:0 0 26px;
+    color:#222;
+  }
+
+  .poem p:last-child{
+    margin-bottom:0;
+  }
+
+  .poem-last{
+    font-weight:700;
+  }
+
+  /* ---- shared site index ---- */
+  .site-index{ background:var(--paper); color:var(--ink); padding: 32px 40px 72px; }
+  .site-index-inner{ max-width:900px; margin:0 auto; }
+  .section-title{ font-family:'Anton', 'Arial Black', Arial, sans-serif; font-weight:400; color:var(--red); font-size: clamp(26px, 4vw, 40px); text-transform:uppercase; margin: 40px 0 4px; }
+  .section-title:first-child{ margin-top:0; }
+  .row-group{ border-top:1px solid var(--ink); }
+  .row-group a{ display:flex; justify-content:space-between; padding:12px 0; border-bottom:1px solid var(--ink); text-decoration:none; color:var(--ink); font-size:16px; }
+  .row-group a:hover{ background:var(--yellow); }
+</style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="eyebrow-row">
+      <a href="#">Your Friendly Neighborhood Rapper ↗</a>
+    </div>
+    <h1><a href="index.html">From The Stand's Eyeview</a></h1>
+  </div>
+
+  <div class="bio-wrap">
+    <div class="bio-photo-col">
+      <div class="bio-photo">
+        <!--
+          Khi có ảnh chân dung, xóa dòng placeholder-text bên dưới
+          và thay bằng:
+          <img src="images/bio-photo.jpg" alt="Portrait">
+        -->
+        <p class="placeholder-text">Ảnh sẽ hiện ở đây — upload vào images/bio-photo.jpg</p>
+      </div>
+
+      <div class="bio-photo">
+        <!-- <img src="images/bio-photo-2.jpg" alt=""> -->
+        <p class="placeholder-text">Ảnh sẽ hiện ở đây — upload vào images/bio-photo-2.jpg</p>
+      </div>
+
+      <div class="bio-photo">
+        <!-- <img src="images/bio-photo-3.jpg" alt=""> -->
+        <p class="placeholder-text">Ảnh sẽ hiện ở đây — upload vào images/bio-photo-3.jpg</p>
+      </div>
+    </div>
+
+    <div class="bio-text">
+      <p class="eyebrow">About</p>
+      <h2>Your Friendly Neighborhood Rapper</h2>
+
+      <p>I used to think I had autism, attention deficit disorder, or some kind of mental health issues. Most of the time, I don't feel comfortable talking to people and I love being by myself while listening to my favorite songs, reading my favorite books. However, it changed when I started to look at my problems from a different perspective, and saw my personal values in it.</p>
+
+      <p><strong>I'm a silent poet.</strong> I'd rather write than talk, rather think than perform. The way I feel about things around me barely appears in conversation, but on paper.</p>
+
+      <p><strong>I'm a collector of humble objects.</strong> The daily route to school in the early morning, a half-filled notebook, mother's new knife — oh wait, I actually wrote a whole poem about that knife, it's at the end if you're curious. Anyway. I believe nothing is useless forever, even a broken brick can earn its place, given enough time.</p>
+
+      <p><strong>I'm a proud Vietnamito.</strong> I watch rap culture from the stands, not the floor, collecting posters, tracing its history, learning its language before I ever try to speak it. I never claim it as my own, because I don't need to. I already have a culture I'm proud of. Humble - like I've always been taught to be. Brave – because it requires courage to remain loyal to who you are rather than trying to fit in somewhere else. Resilient – because I was born that way, bending but never breaking, regardless of what life throws at me.</p>
+
+      <p><strong>I'm a lifelong learner.</strong> Coming from a background where education was highly appreciated long before I knew what it meant, and now I have inherited it without feeling any sort of stress; rather I feel proud of it since I think of it as a gift from my family to me. Every time I learn something new, it just adds another page to this book that my family began before my birth.</p>
+
+      <p><strong>I'm your friendly neighborhood rapper.</strong> No character, no borrowed persona, no mask I put on before I step up to the mic. What you hear on a track is the same person you'd meet in a conversation.</p>
+    </div>
+  </div>
+
+  <div class="poem-wrap">
+    <p class="poem-intro">Now here's the knife poem I promised.</p>
+    <div class="poem">
+      <p>Momma bought a new knife, which is the same model that I have been using for 4 years. What a coincidence. Thoughts started to kick in my brain when I noticed the difference in size between the two knives. Mine was smaller. Four years of cutting, chopping, and sharpening had gradually worn it down. I never noticed that. Ever.</p>
+
+      <p>Momma bought a new knife, which came in a fresh box. It is untouched, sharp, and beautiful. But what story does it have to tell, other than being born from a factory filled with cold steel, heartless machinery, and the screeching whine of metal? Mine has plenty of stories. The clumsy hand learning to hold a knife correctly for the first time. Tears that filled my eyes each time it slid through onions. The tenderness changing in different pieces of steak. The excitement when I finally created my first original dish.</p>
+
+      <p>Momma bought a new knife. It helped me to realize something. I have a big dream and high expectations, and I have never felt fulfilled. I always tell myself to try harder, grind harder even when I am mentally exhausted.</p>
+
+      <p>Momma bought a new knife. It reminded me of one thing. The beauty lies in the process. Taking a look back can help me get over it, at least it gives me a reason.</p>
+
+      <p class="poem-last">Momma bought a new knife, after all these years, will I?</p>
+    </div>
+  </div>
+
+  <div class="site-index">
+    <div class="site-index-inner">
+      <h2 class="section-title">Track List</h2>
+      <nav class="row-group">
+        <a href="all-i-see.html"><span>chapter 1</span><span>all i see</span></a>
+        <a href="trifecta.html"><span>chapter 2</span><span>trifecta</span></a>
+        <a href="a-knife-in-the-kitchen.html"><span>chapter 3</span><span>a knife in the kitchen</span></a>
+        <a href="from-the-stands-eyeview.html"><span>chapter 4</span><span>from the stand's eyeview</span></a>
+      </nav>
+
+      <h2 class="section-title">Music Video</h2>
+      <nav class="row-group">
+        <a href="mv-trifecta.html"><span>act 1</span><span>trifecta</span></a>
+        <a href="mv-a-knife-in-the-kitchen.html"><span>act 2</span><span>a knife in the kitchen</span></a>
+      </nav>
+
+      <h2 class="section-title">About</h2>
+      <nav class="row-group">
+        <a href="about.html"><span>bio</span><span>→</span></a>
+      </nav>
+    </div>
+  </div>
+
+</body>
+</html>
