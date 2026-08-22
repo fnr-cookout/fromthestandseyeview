@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About — From the Stand's Eyeview</title>
+<title>About — From the Stand</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
@@ -171,6 +171,51 @@
     font-weight:700;
   }
 
+  /* ---- contact / looking-for section ---- */
+  .contact-wrap{
+    max-width:700px;
+    margin:0 auto;
+    padding: 0 32px 80px;
+    text-align:center;
+  }
+
+  .contact-title{
+    font-family:'Anton', 'Arial Black', Arial, sans-serif;
+    font-weight:400;
+    color:var(--red);
+    font-size: clamp(24px, 3.5vw, 36px);
+    text-transform:uppercase;
+    margin: 0 0 20px;
+  }
+
+  .contact-text{
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size:16px;
+    line-height:1.8;
+    margin: 0 0 32px;
+    color:#000000;
+  }
+
+  .contact-links{
+    display:flex;
+    justify-content:center;
+    gap:28px;
+    flex-wrap:wrap;
+  }
+
+  .contact-links a{
+    color:var(--ink);
+    text-decoration:none;
+    font-size:15px;
+    border-bottom:1px solid var(--ink);
+    padding-bottom:2px;
+  }
+
+  .contact-links a:hover{
+    color:var(--red);
+    border-color:var(--red);
+  }
+
   /* ---- shared site index ---- */
   .site-index{ background:var(--paper); color:var(--ink); padding: 32px 40px 72px; }
   .site-index-inner{ max-width:900px; margin:0 auto; }
@@ -185,9 +230,9 @@
 
   <div class="header">
     <div class="eyebrow-row">
-      <a href="#">Your Friendly Neighborhood Rapper ↗</a>
+      <a href="about.html">Your Friendly Neighborhood Rapper ↗</a>
     </div>
-    <h1><a href="index.html">From The Stand's Eyeview</a></h1>
+    <h1><a href="index.html">From The Stand</a></h1>
   </div>
 
   <div class="bio-wrap">
@@ -235,6 +280,16 @@
       <p>Momma bought a new knife. It reminded me of one thing. The beauty lies in the process. Taking a look back can help me get over it, at least it gives me a reason.</p>
 
       <p class="poem-last">Momma bought a new knife, after all these years, will I?</p>
+    </div>
+  </div>
+
+  <div class="contact-wrap">
+    <h2 class="contact-title">What I'm Looking For</h2>
+    <p class="contact-text">Looking for a distribution and marketing partner to help this project grow — someone who understands where it comes from, and hopefully has the experience to help it reach further than home. This is a concept EP written and performed by me, with creative direction on the videos, built ground floor — hoping to find a partner who wants to grow this with me, not just distribute it.</p>
+
+    <div class="contact-links">
+      <a href="mailto:baodailyuse@gmail.com">baodailyuse@gmail.com</a>
+      <a href="https://www.instagram.com/bigpocooks/" target="_blank" rel="noopener">Instagram ↗</a>
     </div>
   </div>
 
