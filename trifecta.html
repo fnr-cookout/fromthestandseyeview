@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Chapter 2: Trifecta — From the Stand's Eyeview</title>
+<title>Chapter 2: Trifecta — From the Stand</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
@@ -195,16 +195,28 @@
 
   <div class="header">
     <div class="eyebrow-row">
-      <a href="#">Your Friendly Neighborhood Rapper ↗</a>
+      <a href="about.html">Your Friendly Neighborhood Rapper ↗</a>
     </div>
-    <h1><a href="index.html">From The Stand's Eyeview</a></h1>
+    <h1><a href="index.html">From The Stand</a></h1>
   </div>
 
   <div class="video-bg">
-    <video autoplay muted loop playsinline>
+    <video id="bg-video" autoplay muted loop playsinline>
       <source src="videos/trifecta-bg.mp4" type="video/mp4">
     </video>
   </div>
+
+  <script>
+    (function(){
+      var v = document.getElementById('bg-video');
+      var CUT_SECONDS = 20; // đoạn đứng hình cuối video, tính bằng giây
+      v.addEventListener('timeupdate', function(){
+        if (v.duration && v.currentTime >= v.duration - CUT_SECONDS) {
+          v.currentTime = 0;
+        }
+      });
+    })();
+  </script>
 
   <div class="content">
     <h2 class="chapter-label">chapter 2: trifecta</h2>
